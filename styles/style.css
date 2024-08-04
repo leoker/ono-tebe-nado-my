@@ -1,8 +1,6 @@
 /* место для вашего кода */
 
-.section {
-    width: 100%;
-}
+
 
 
 
@@ -112,4 +110,69 @@ header {
 .section_cover__bottom-bar__button:hover {
     background-color: #fff;
     color: #000;
+}
+
+
+
+.section_lots {
+    padding: 0 24px;
+    margin-top: 179px;
+}
+.section_lots__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.section_lots__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin-top: 27px;
+    list-style: none;
+    color: #fff;
+}
+.section_lots__cards__item > a {
+    display: block;
+    text-decoration: none;
+}
+.section_lots__cards__item > a > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 563px;
+    position: relative;
+    padding: 48px 40px;
+    background-size: cover;
+    background-position: center center;
+}
+.section_lots__cards__item__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.section_lots__cards__item__title {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.section_lots__cards__item__description {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.lots__look-more-link {
+    display: block;
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-position: under;
 }
