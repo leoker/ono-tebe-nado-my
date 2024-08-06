@@ -10,7 +10,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
-    padding: 92px 50px 96px 50px;
+    padding: 87px 50px 88px 50px;
     font-size: 18px;
     text-underline-position: under;
 }
@@ -23,8 +23,8 @@ header {
 .header__menu > ul {
     display: flex;
 }
-.header__menu > ul > li {
-    margin-left: 25px;
+.header__menu > ul > li:not(:first-child) {
+    margin-left: 33px;
 }
 .li_without-marker {
     list-style: none;
@@ -38,6 +38,7 @@ header {
     flex-direction: column;
     justify-self: right;
     font-style: normal;
+    line-height: 24px;
 }
 
 
@@ -75,9 +76,17 @@ header {
 }
 .section_cover__title__line_center {
     text-align: center;
+    margin-top: 11px;
 }
 .section_cover__title__line_right {
     text-align: right;
+    margin-top: 5px;
+}
+.section_cover__title__line_right > .section_cover__title__line__text_uncompressed {
+    margin-right: -23px;
+}
+.section_cover__title__line_right > .section_cover__title__line__text_compressed {
+    margin-right: -30px;
 }
 .section_cover__title__line__text_compressed {
     letter-spacing: 30px;
@@ -92,7 +101,8 @@ header {
     align-items: center;
     position: relative;
     z-index: 1;
-    margin-top: 135px;
+    margin-top: 129px;
+    padding-left: 32px;
     font-size: 22px;
     text-transform: uppercase;
 
@@ -183,7 +193,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
-    margin-top: 146px;
+    margin-top: 181px;
     padding: 0 24px;
     margin-bottom: 91px;
 }
@@ -212,7 +222,7 @@ header {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 98px 0 95px 0;
+    margin: 98px 0 100px 0;
 }
 .section_about__info > p {
     font-size: 20px;
@@ -233,10 +243,12 @@ footer {
 
 .footer__adress {
     justify-self: auto;
+    font-size: 18px;
 }
 
 .footer__menu {
     text-align: center;
+    font-size: 18px;
 }
 .footer__menu > ul {
     list-style: none;
