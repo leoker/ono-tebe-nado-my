@@ -26,7 +26,7 @@ header {
 .header__menu > ul > li {
     margin-left: 25px;
 }
-.header__menu .li_without-marker {
+.li_without-marker {
     list-style: none;
 }
 .header__menu .li_without-marker > a {
@@ -185,6 +185,7 @@ header {
     grid-gap: 25px;
     margin-top: 146px;
     padding: 0 24px;
+    margin-bottom: 91px;
 }
 .section_about__info {
     grid-column: 2/4;
@@ -219,4 +220,40 @@ header {
 }
 .section_about__info > p:not(:first-child) {
     margin-top: 26px;
+}
+
+
+
+footer {
+    padding: 87px 50px 91px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer__adress {
+    justify-self: auto;
+}
+
+.footer__menu {
+    text-align: center;
+}
+.footer__menu > ul {
+    list-style: none;
+}
+.footer__menu .li_without-marker > a {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.footer__social-list > li > a > img {
+    width: 48px;
+    height: 48px;
+}
+.footer__social-list > li:not(:last-child) {
+    margin-right: 48px;
 }
